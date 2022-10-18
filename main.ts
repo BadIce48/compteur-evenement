@@ -30,4 +30,5 @@ basic.forever(function () {
                 `)
         }
     }
+    basic.showNumber(Nombre_de_peronnes)
 })
