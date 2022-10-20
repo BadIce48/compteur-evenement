@@ -12,7 +12,12 @@ input.onButtonPressed(Button.B, function () {
     basic.showNumber(Nombre_de_peronnes)
 })
 basic.forever(function () {
-    if (Nombre_de_peronnes == 10) {
+    if (Nombre_de_peronnes < 0) {
+        Nombre_de_peronnes = 0
+    }
+})
+basic.forever(function () {
+    if (Nombre_de_peronnes >= 10) {
         for (let index = 0; index < 4; index++) {
             basic.showLeds(`
                 . . # . .
